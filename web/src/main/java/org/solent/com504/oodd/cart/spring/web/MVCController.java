@@ -127,7 +127,7 @@ public class MVCController {
     }
     
         @RequestMapping(value = "/checkout", method = {RequestMethod.GET, RequestMethod.POST})
-    public String checkoutList(Model model, HttpSession session) {
+    public String viewcheckout(Model model, HttpSession session) {
 
         // get sessionUser from session
         User sessionUser = getSessionUser(session);
@@ -170,6 +170,26 @@ public class MVCController {
         // used to set tab selected
         model.addAttribute("selectedPage", "admin");
         return "catalog";
+    }
+    
+   @RequestMapping(value = {"/createItem"}, method = RequestMethod.GET)
+    public String createItem(
+            Model model,
+            HttpSession session) {
+        String message = "";
+        String errorMessage = "";
+
+        model.addAttribute("selectedPage", "createItem");
+
+        LOG.debug("get create item page");
+
+        // check secure access to modifyUser profile
+        User sessionUser = getSessionUser(session);
+        model.addAttribute("sessionUser", sessionUser);
+
+        model.addAttribute("message", message);
+        model.addAttribute("errorMessage", errorMessage);
+        return "ModifyItem";
     }
     
     @RequestMapping(value = "/basket", method = {RequestMethod.GET, RequestMethod.POST})

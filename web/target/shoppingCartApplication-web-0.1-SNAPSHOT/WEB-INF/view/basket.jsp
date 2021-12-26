@@ -47,7 +47,7 @@
         </td>
      
     </table>
-<button type="button" onclick="window.location.href='checkout.jsp'">Checkout</button>
+<button type="button" onclick="window.location.href='checkout'">Checkout</button>
 </main>
 
 <jsp:include page="footer.jsp" />

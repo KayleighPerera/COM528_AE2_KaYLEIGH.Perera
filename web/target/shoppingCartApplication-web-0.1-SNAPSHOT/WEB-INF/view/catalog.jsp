@@ -1,81 +1,55 @@
 <%-- 
     Document   : content
-    Created on : Jan 4, 2020, 11:19:47 AM
-    Author     : Kayleigh Perera
+    Created on : Nov 11, 2021, 14:24
+    Author     : rgaudion
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%
-// request set in controller
-//    request.setAttribute("selectedPage","catalog");
-%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page import="org.solent.com504.oodd.cart.model.dto.User"%>
+<%@page import="org.solent.com504.oodd.cart.model.dto.UserRole"%>
+<c:set var = "selectedPage" value = "catalog" scope="request"/>
 <jsp:include page="header.jsp" />
+<!-- start of catalog.jsp selectedPage=${selectedPage}-->
+
 <!-- Begin page content -->
 <main role="main" class="container">
 
-    <p> Total Amount of Items: ${availableItemsSize} </p><!-- comment -->
-    <table class="table">
+    <div>
+        <h1>Catalog</h1>
+        <p>showing ${catalogListSize} items </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>    
+                    <th scope="col">Category</th>                    
 
-        <tr>
-            <th>Item Name</th>
-            <th>Price</th>
-            <th>Quantity in Stock</th>
-                <c:if test="${user.userRole =='ADMINISTRATOR'}">
-                <th>Activate </th>
-                <th>Deactivate </th>
-                </c:if>  
-            <th></th>
-        </tr>
-
-        <c:forEach var="item" items="${availableItems}">
-
-            <tr>
-                <td>${item.name}</td>
-                <td>£${item.price}</td>
-                <td>${item.stock}</td>
-                <c:if test="${user.userRole =='ADMINISTRATOR'}">
-                <form action="./catalog" method="post">
-                    <input type="hidden" name="itemUUID" value="${item.uuid}">
-                    <input type="hidden" name="action" value="activate">
-                    <td><button type="submit" >Activate </button></td>
-
-                </form>
-                <form action="./catalog" method="post">
-                    <input type="hidden" name="itemUUID" value="${item.uuid}">
-                    <input type="hidden" name="action" value="deactivate">
-                    <td><button type="submit" >Deactivate </button></td>
-
-                </form>
-                <c:if test="${ShoppingItem.active == true}">
-                    <td> Item Active</td>
-                </c:if>
-                <c:if test="${ShoppingItem.active == false}">
-                    <td> Item Deactivated </td>    
-                </c:if>
-                <td>
-
-                </td>
-
+                    <th></th>
                 </tr>
-            </c:if>
-        </c:forEach>
+            </thead>
+            <tbody>
+                <c:forEach var="item" items="${catalogList}">
+                    <tr>
+                        <td>${item.name}</td>
+                        <td>${item.price}</td>
+                        <td>${item.quantity}</td>                        
+                        <td>${item.category}</td>
+                        <td>
+                            <form action="./ModifyItem" method="GET">
+                                <button class="btn" type="submit" >Modify Item</button>
+                            </form> 
+                        </td>
+                    </tr>
+                </c:forEach>
 
-        <c:if test="${user.userRole =='ADMINISTRATOR'}">
-            <p> Add New Item </p>
-            <form action="./catalog" method="post">
-                <input type="hidden" name="action" value="addNewItem">
-                <p>Item Name <input type="text" name="name" ></input></p>
-                <p>Price <input type="double" name="price" ></input></p>
-                <p>Stock Level <input type="integer" name="stock" ></input></p>
-                <p><button type="submit" >Add New Item</button></p>
-            </form>
-        </c:if>        
-
-    </table>
+            </tbody>
+        </table>
+        <form action="./createItem" method="GET">
+            <button class="btn" type="submit" >Add Item</button>
+        </form> 
+    </div>
 </main>
-
-
-
 
 <jsp:include page="footer.jsp" />
