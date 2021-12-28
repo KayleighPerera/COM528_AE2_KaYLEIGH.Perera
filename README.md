@@ -19,7 +19,7 @@
 
 9) [Project Digrams](#Project-diagrams)
     - [Wireframes](#Wireframes)
-    - [UML Class diagram](#Uml-class-diagram)
+    - [Sequence diagram](#Uml-class-diagram)
     - [Robustness diagram](#Robustness-diagram)
 
 
@@ -121,4 +121,8 @@ Their are many tools needed to make this application working, these include thin
 
 
 # Testing
+
 # Project Diagrams
+## Wireframes
+## Sequence diagram
+## Robustness diagram
