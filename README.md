@@ -98,11 +98,27 @@ Their are many tools needed to make this application working, these include thin
 |User | Action | Response|
 |------|--------|---------|
 | 1 | User enteres application URL in search engine | Redirects user to home page |
+| 2 | User will need to log in the application | Redirects user to user view page |
+| 3 | User can add items to shopping cart | automatically adds the item to basket and shopping cart |
+| 4 | User can remove items from basket or shopping cart | automatically removes item deducting the price|
+| 5 | User can purchase items in the basket link in the nav bar | redirects user to basket where the items added are viewd as well as price |
+| 6 | User can buy the items by pressing on pucharse | redirects user to the credit card phase |
+| 7 | User enteres the correct card information | Application checks if the credit card details are correct and vlaidates it using the luhn algorithm
+| 8 | If user fails to enter card details | An error message is shown letting user know details must be entered|
+| 9 | If user enters the wrong details | An error message is shown to correct the details |
+| 10* | If user enters the right details | a confirmation message will show |
+| 11 | Users can see their orders in the my orders page | once press on the button it will redirect them to their orders|
+
+## Annonymus point of view
+
+| Admin | Action | Response|
+|------|--------|---------|
+| 1 |  | | 
 | 2 |  | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
+| 3 |  | |
+| 4 |  | |
+
+
 
 # Testing
 # Project Diagrams
