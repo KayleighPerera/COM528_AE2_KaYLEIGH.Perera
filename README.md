@@ -83,5 +83,26 @@ Their are many tools needed to make this application working, these include thin
 - system interacts with the bank service over a ReST interface to charge the user's credit card 
 
 # Use Cases
+
+## Admin point of view
+
+| Admin | Action | Response|
+|------|--------|---------|
+| 1 | Admin logs in | Redirects user admin view | 
+| 2 | Admin can go to basket/admin/manage catalog| redirects to a page where only admins can go|
+| 3 | Admin can add items to the catalog | adds items to the catalogue page for admin and user|
+| 4 | Admin can view all users orders| admin can view all orders in the my orders page|
+
+## User point of view
+
+|User | Action | Response|
+|------|--------|---------|
+| 1 | User enteres application URL in search engine | Redirects user to home page |
+| 2 |  | |
+| 3 | | |
+| 4 | | |
+| 5 | | |
+| 6 | | |
+
 # Testing
 # Project Diagrams
