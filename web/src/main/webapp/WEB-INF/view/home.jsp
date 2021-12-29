@@ -14,6 +14,7 @@
 <!-- Begin page content -->
 <main role="main" class="container">
     <H1>Home</H1>
+    <button type="button" onclick="window.location.href='orders'">My orders</button>
     <div style="color:red;">${errorMessage}</div>
     <div style="color:green;">${message}</div>
 

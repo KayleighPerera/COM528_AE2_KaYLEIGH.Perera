@@ -126,6 +126,56 @@ public class MVCController {
         return "about";
     }
     
+    @RequestMapping(value = "/viewModifyItem", method = {RequestMethod.POST})
+    public String udpateItem(
+            @RequestParam(value = "name", required = true) String newName, 
+   	    @RequestParam(value = "price", required = false) String inputPrice,
+            @RequestParam(value = "quantity", required = false) String inputQuantity,             
+            @RequestParam(value = "category", required = false) String newCategory,
+            Model model,
+            HttpSession session) {
+            User sessionUser = getSessionUser(session);
+             model.addAttribute("sessionUser", sessionUser);
+        
+        // used to set tab selected
+        model.addAttribute("selectedPage", "viewModifyItem");
+        return "/catalog";
+    }
+    
+      @RequestMapping(value = {"/createItem"}, method = RequestMethod.GET)
+    public String createItem(
+            Model model,
+            HttpSession session) {
+        String message = "";
+        String errorMessage = "";
+
+        model.addAttribute("selectedPage", "createItem");
+
+        LOG.debug("get create item page");
+
+        // check secure access to modifyUser profile
+        User sessionUser = getSessionUser(session);
+        model.addAttribute("sessionUser", sessionUser);
+
+        model.addAttribute("message", message);
+        model.addAttribute("errorMessage", errorMessage);
+        return "viewModifyItem";
+    }
+    
+ 
+
+    @RequestMapping(value = "/orders", method = {RequestMethod.GET, RequestMethod.POST})
+    public String OrdersList(Model model, HttpSession session) {
+
+        // get sessionUser from session
+        User sessionUser = getSessionUser(session);
+        model.addAttribute("sessionUser", sessionUser);
+        
+        // used to set tab selected
+        model.addAttribute("selectedPage", "orders");
+        return "orders";
+    }
+    
         @RequestMapping(value = "/checkout", method = {RequestMethod.GET, RequestMethod.POST})
     public String viewcheckout(Model model, HttpSession session) {
 
@@ -170,26 +220,6 @@ public class MVCController {
         // used to set tab selected
         model.addAttribute("selectedPage", "admin");
         return "catalog";
-    }
-    
-   @RequestMapping(value = {"/createItem"}, method = RequestMethod.GET)
-    public String createItem(
-            Model model,
-            HttpSession session) {
-        String message = "";
-        String errorMessage = "";
-
-        model.addAttribute("selectedPage", "createItem");
-
-        LOG.debug("get create item page");
-
-        // check secure access to modifyUser profile
-        User sessionUser = getSessionUser(session);
-        model.addAttribute("sessionUser", sessionUser);
-
-        model.addAttribute("message", message);
-        model.addAttribute("errorMessage", errorMessage);
-        return "ModifyItem";
     }
     
     @RequestMapping(value = "/basket", method = {RequestMethod.GET, RequestMethod.POST})

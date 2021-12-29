@@ -55,7 +55,8 @@
                   </tr>
                </tbody>
             </table>
+            <button class="btn ml-2 rounded" type="submit">Send Details</button>
          </div>
-         <br><br
+         <br><br>
    </form>
 <jsp:include page="footer.jsp" />
