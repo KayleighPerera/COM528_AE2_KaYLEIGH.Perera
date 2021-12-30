@@ -126,3 +126,5 @@ Their are many tools needed to make this application working, these include thin
 ## Wireframes
 ## Sequence diagram
 ## Robustness diagram
+
+![Robustness Diagram drawio](https://user-images.githubusercontent.com/71653944/147790847-db183617-697a-4772-8da4-b0edda906f31.png)
