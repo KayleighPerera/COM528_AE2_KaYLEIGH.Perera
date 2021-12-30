@@ -109,16 +109,6 @@ Their are many tools needed to make this application working, these include thin
 | 10* | If user enters the right details | a confirmation message will show |
 | 11 | Users can see their orders in the my orders page | once press on the button it will redirect them to their orders|
 
-## Annonymus point of view
-
-| Admin | Action | Response|
-|------|--------|---------|
-| 1 |  | | 
-| 2 |  | |
-| 3 |  | |
-| 4 |  | |
-
-
 
 # Testing
 
