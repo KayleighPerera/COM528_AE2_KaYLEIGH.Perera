@@ -17,8 +17,7 @@
 
 8) [Testing](#testing)
 
-9) [Project Digrams](#Project-diagrams)
-    - [Wireframes](#Wireframes)
+9) [Project Digrams](#Project-diagrams))
     - [Sequence diagram](#Uml-class-diagram)
     - [Robustness diagram](#Robustness-diagram)
 
