@@ -17,8 +17,7 @@
 
 8) [Testing](#testing)
 
-9) [Project Digrams](#Project-diagrams)
-    - [Wireframes](#Wireframes)
+9) [Project Digrams](#Project-diagrams))
     - [Sequence diagram](#Uml-class-diagram)
     - [Robustness diagram](#Robustness-diagram)
 
@@ -109,20 +108,12 @@ Their are many tools needed to make this application working, these include thin
 | 10* | If user enters the right details | a confirmation message will show |
 | 11 | Users can see their orders in the my orders page | once press on the button it will redirect them to their orders|
 
-## Annonymus point of view
-
-| Admin | Action | Response|
-|------|--------|---------|
-| 1 |  | | 
-| 2 |  | |
-| 3 |  | |
-| 4 |  | |
-
-
 
 # Testing
 
 # Project Diagrams
-## Wireframes
 ## Sequence diagram
 ## Robustness diagram
+The robustness diagram below shows how the user and admin will interact with the website through an interface, which will process the user input and direct the user to a catalogue they can buy from on the other hand you can also process the admin input and it directs the admin to a admin view only where they can add or remove items to the catalogue, remove or add users as well as view all orders made from different users.This application also allows users to make a purhcase If the inputs is valid there purchase was successful and will be stored in a database, if not the card is invalid and the application will direct you back to the credit card form. This diagram is used to show the main interactions between both user and domain and admin and domain and how they are connected.
+
+![Robustness Diagram drawio](https://user-images.githubusercontent.com/71653944/147790847-db183617-697a-4772-8da4-b0edda906f31.png)
