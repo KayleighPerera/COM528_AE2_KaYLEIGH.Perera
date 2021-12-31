@@ -113,6 +113,7 @@ Their are many tools needed to make this application working, these include thin
 
 # Project Diagrams
 ## Sequence diagram
+A sequence diagram is a Unified Modeling Language (UML) diagram that illustrates the sequence of messages between objects in an interaction. A sequence diagram shows the sequence of messages passed between objects. Sequence diagrams can also show the control structures between objects. Below we can see three different object being an admin, customer and the shopping cart in between we see how those users and application control the structure of each object for example when the user adds items to the shopping cart the application reacts by adding the items and price to the basket so the user is able to purchase it.
     
 ![Sequence Diagram drawio (1)](https://user-images.githubusercontent.com/71653944/147834579-6df132ce-0e12-4a8e-b8bc-c1e34e97949f.png)
 
