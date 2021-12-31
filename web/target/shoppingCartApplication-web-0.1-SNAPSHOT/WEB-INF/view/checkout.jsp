@@ -1,22 +1,40 @@
-<%@page import="org.springframework.web.bind.annotation.RestController"%>
-<%@page import="org.solent.com504.oodd.cart.web.WebObjectFactory"%>
+<%@page import="com.github.b4.service.RestController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
-   request.setAttribute("selectedPage","checkout");
+   request.setAttribute("selectedPage","home");
 %>
-
+<%--import properties modules --%>
+<%@page import="com.github.b4.dao.WebObjectFactory"%>
+<%@page import="com.github.b4.dao.PropertiesDao"%>
 <%--import logging modules --%>
 <%@ page import="org.apache.logging.log4j.Logger" %>
 <%@ page import="org.apache.logging.log4j.LogManager" %>
 <%-- import controller modules --%>
 <%-- get properties--%>
-
+<%
+   PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
+   // get details of the recipient
+   String recipient_name = propertiesDao.getProperty("recipient_name");
+   String recipient_ccnumber = propertiesDao.getProperty("recipient_ccnumber");
+   String recipient_issueNum = propertiesDao.getProperty("recipient_issueNum");
+   String recipient_endDate = propertiesDao.getProperty("recipient_endDate");
+   String recipient_cvv = propertiesDao.getProperty("recipient_cvv");
+ %>
+<%-- define backend things--%>
+<%
+String reply = "";
+if ("POST".equals(request.getMethod())) {
+    reply = RestController.handleRequest(request);
+    }
+%>
 <jsp:include page="header.jsp" />
 <script src="./resources/js/numpad.js" defer></script>
 <main class="container">
    <form class="form-card" method="POST" id="card-form">
       <div class="form-group">
          <div class="btn-group-vertical">
+            <input type="button" value="Send Money" onclick="document.getElementsByName('action')[0].value = 'transaction'"></input>
+            <input type="button" value="Refund Money" onclick="document.getElementsByName('action')[0].value = 'refund'"></input>
             <input type="button" value="Check Credit card" onclick="document.getElementsByName('action')[0].value = 'lunn'"></input>
          </div>
          <br>
@@ -55,8 +73,40 @@
                   </tr>
                </tbody>
             </table>
-            <button class="btn ml-2 rounded" type="submit">Send Details</button>
          </div>
          <br><br>
+         <div id="recipient">
+            <h1> Recipient </h1>
+            <table class="table">
+               <tbody>
+                  <tr>
+                     <td>Full Name</td>
+                     <td><input type="text" size="36" name="recipient_name" value="<%=recipient_name%>" readonly></td>
+                  </tr>
+                  <tr>
+                     <td>Credit Card Number</td>
+                     <td><input type="text" size="36" name="recipient_ccnumber" value="<%=recipient_ccnumber%>" readonly></td>
+                  </tr>
+                  <td>Issue Number</td>
+                  <td><input type="text" size="36" name="recipient_issueNum" value="<%=recipient_issueNum%>" readonly></td>
+                  </tr> 
+                  <tr>
+                     <td>Expiry Date</td>
+                     <td><input type="text" size="36" name="recipient_endDate" value="<%=recipient_endDate%>" readonly></td>
+                  </tr>
+                  <tr>
+                     <td>Cvv Code</td>
+                     <td><input type="text" size="36" name="recipient_cvv" value="<%=recipient_cvv%>" class="form-group col-md-2" readonly></td>
+                  </tr>
+                  <tr>
+                     <td>Action</td>
+                     <td><input type="text" name="action" value="transaction" readonly> </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <button class="btn ml-2 rounded" type="submit">Send Details</button>
+      </div>
    </form>
+   <p><%=reply%></p>
 <jsp:include page="footer.jsp" />

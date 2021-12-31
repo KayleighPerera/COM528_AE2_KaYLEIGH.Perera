@@ -131,7 +131,6 @@ public class MVCController {
             @RequestParam(value = "name", required = true) String newName, 
    	    @RequestParam(value = "price", required = false) String inputPrice,
             @RequestParam(value = "quantity", required = false) String inputQuantity,             
-            @RequestParam(value = "category", required = false) String newCategory,
             Model model,
             HttpSession session) {
             User sessionUser = getSessionUser(session);

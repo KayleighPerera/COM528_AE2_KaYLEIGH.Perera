@@ -29,10 +29,6 @@
                         <td><input type="text" name="name" value="${modifyItem.name}" /></td>
                     </tr>
                     <tr>
-                        <td>Category</td>
-                        <td><input type="text" name="category" value="${modifyItem.category}" /></td>
-                    </tr>
-                    <tr>
                         <td>Price</td>
                         <td><input type="text" name="price" value="${modifyItem.price}" /></td>
                     </tr>
@@ -61,12 +57,6 @@
             </form> 
         </c:if> 
             
-        <c:if test="${sessionUser.userRole !='ADMINISTRATOR'}">
-            <BR>
-            <form action="./home">
-                <button class="btn" type="submit" >Return To Home</button>
-            </form> 
-        </c:if> 
 
         </div>
 
