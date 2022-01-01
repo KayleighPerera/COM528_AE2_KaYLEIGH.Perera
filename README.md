@@ -111,6 +111,33 @@ Their are many tools needed to make this application working, these include thin
 
 # Testing
 
+## User Tests
+
+| Test | Action| Expected Reaction| Status |
+| --------- | --------------------------- | -------------------------------- | ------ |
+| T1 | User enters in the host url for the application. | If the server is running you will be redirected to a home page, if not you will either get a error | PASSED ✅ |
+| T2 | User can log in or create an account | application logs in user or creates user or gives error due to wrong details  | PASSED ✅ |
+| T3 | User can look for items they want and add to cart | the apllication gets these items and adds them to cart while also adding the total and quantity | PASSED ✅ |
+| T4 | | |  |
+| T5 | | |  |
+| T6 | | |  |
+| T7 | | |  |
+| T8 | | |  |
+| T9 | | |  |
+| T10 | | | |
+
+
+## Admin Tests
+
+| T1 | | |  |
+| T2 | | |  |
+| T3 | | |  |
+| T4 | | |  |
+| T5 | | |  |
+| T6 | | |  |
+| T7 | | |  |
+
+
 # Project Diagrams
 ## Sequence diagram
 A sequence diagram is a Unified Modeling Language (UML) diagram that illustrates the sequence of messages between objects in an interaction. A sequence diagram shows the sequence of messages passed between objects. Sequence diagrams can also show the control structures between objects. Below we can see three different object being an admin, customer and the shopping cart in between we see how those users and application control the structure of each object for example when the user adds items to the shopping cart the application reacts by adding the items and price to the basket so the user is able to purchase it.
