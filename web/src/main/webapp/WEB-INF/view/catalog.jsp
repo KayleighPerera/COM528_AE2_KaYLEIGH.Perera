@@ -24,7 +24,6 @@
             <tr>
                 <td>${item.name}</td>
                 <td>${item.price}</td>
-                <td>
                     <!-- post avoids url encoded parameters -->
                     <form action="./home" method="get">
                         <input type="hidden" name="itemName" value="${item.name}">
