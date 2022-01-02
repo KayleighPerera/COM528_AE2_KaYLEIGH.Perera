@@ -92,7 +92,8 @@ Their are many tools needed to make this application working, these include thin
 | 1 | Admin logs in | Redirects user admin view | 
 | 2 | Admin can go to basket/admin/manage catalog| redirects to a page where only admins can go|
 | 3 | Admin can add items to the catalog | adds items to the catalogue page for admin and user|
-| 4 | Admin can view all users orders| admin can view all orders in the my orders page|
+| 4 | Admin can remove users | removes user out of the database |
+| 5 | Admin can view all users orders| admin can view all orders in the my orders page|
 
 ## User point of view
 
