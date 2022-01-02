@@ -16,6 +16,8 @@
     - [Admin point of view](#Admin-point-of-view)
 
 8) [Testing](#testing)
+    - [User Testing](#user-tests)
+    - [Admin Testing](#admin-tests)
 
 9) [Project Digrams](#Project-diagrams))
     - [Sequence diagram](#Uml-class-diagram)
@@ -105,7 +107,7 @@ Their are many tools needed to make this application working, these include thin
 | 7 | User enteres the correct card information | Application checks if the credit card details are correct and vlaidates it using the luhn algorithm
 | 8 | If user fails to enter card details | An error message is shown letting user know details must be entered|
 | 9 | If user enters the wrong details | An error message is shown to correct the details |
-| 10* | If user enters the right details | a confirmation message will show |
+| 10 | If user enters the right details | a confirmation message will show |
 | 11 | Users can see their orders in the my orders page | once press on the button it will redirect them to their orders|
 
 
@@ -115,16 +117,14 @@ Their are many tools needed to make this application working, these include thin
 
 | Test | Action| Expected Reaction| Status |
 | --------- | --------------------------- | -------------------------------- | ------ |
-| T1 | User enters in the host url for the application. | If the server is running you will be redirected to a home page, if not you will either get a error | PASSED ✅ |
+| T1 | User enters in the host url for the application. | If the server is running you will be redirected to a home page, if not you will get an error | PASSED ✅ |
 | T2 | User can log in or create an account | application logs in user or creates user or gives error due to wrong details  | PASSED ✅ |
 | T3 | User can look for items they want and add to cart | the apllication gets these items and adds them to cart while also adding the total and quantity | PASSED ✅ |
-| T4 | | |  |
-| T5 | | |  |
-| T6 | | |  |
-| T7 | | |  |
-| T8 | | |  |
-| T9 | | |  |
-| T10 | | | |
+| T4 | User can press on the basket page and purchase items | application will redirect to basket page when clicked and the purchase button will take the user to entere credit          card details | PASSED ✅  |
+| T5 | User submits a transaction request, with invalid or outdated card details. | The transaction request is rejected leaving a status message and an error message. | FAILED ❌ |
+| T6 | User submits a transaction request and has funds for this to go through. | The transaction passes, with the user being notified with details of where it went. |  FAILED ❌ |
+| T7 | User views order in the "my orders" page | application shows all orders and order status on the "my orders" page | PASSED ✅  |
+| T8 | User can log out | redirects them to home page in annonymous mode | PASSED ✅   |
 
 
 ## Admin Tests
@@ -132,8 +132,8 @@ Their are many tools needed to make this application working, these include thin
 
 | Test | Action| Expected Reaction| Status |
 | --------- | --------------------------- | -------------------------------- | ------ |
-| T1 | | |  |
-| T2 | | |  |
+| T1 | Admin enters in the host url for the application. | If the server is running you will be redirected to a home page, if not you will get an error | PASSED ✅ |
+| T2 | Admin can log in | application logs in admin or gives error due to wrong details  | PASSED ✅ |
 | T3 | | |  |
 | T4 | | |  |
 | T5 | | |  |
