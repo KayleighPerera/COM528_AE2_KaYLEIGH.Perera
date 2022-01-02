@@ -133,12 +133,11 @@ Their are many tools needed to make this application working, these include thin
 | Test | Action| Expected Reaction| Status |
 | --------- | --------------------------- | -------------------------------- | ------ |
 | T1 | Admin enters in the host url for the application. | If the server is running you will be redirected to a home page, if not you will get an error | PASSED ✅ |
-| T2 | Admin can log in | application logs in admin or gives error due to wrong details  | PASSED ✅ |
-| T3 | | |  |
-| T4 | | |  |
-| T5 | | |  |
-| T6 | | |  |
-| T7 | | |  |
+| T2 | Admin can log in | application logs in admin or gives error due to wrong details | PASSED ✅ |
+| T3 | Admin can modify user| Allows admin to remove or add users | PASSED ✅  |
+| T4 | Admin can modify catalog| Allows admin to remove or add items | PASSED ✅  |
+| T5 | Admin can view all users orders | when "my orders" is pressed on home page it will direct admin to view all orders | FAILED ❌ |
+| T6 | Admin can log out |  redirects them to home page in annonymous mode|  PASSED ✅  |
 
 
 # Project Diagrams
