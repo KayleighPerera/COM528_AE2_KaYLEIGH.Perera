@@ -19,7 +19,7 @@
     - [User Testing](#user-tests)
     - [Admin Testing](#admin-tests)
 
-9) [Project Digrams](#Project-diagrams))
+9) [Project Digrams](#Project-diagrams)
     - [Sequence diagram](#Uml-class-diagram)
     - [Robustness diagram](#Robustness-diagram)
 
