@@ -113,6 +113,9 @@ Their are many tools needed to make this application working, these include thin
 
 # Testing
 
+Below are two charts one for the user and one for the admin tests. These chartd below show what action is taken and how will my application react to the action 
+preformed 
+
 ## User Tests
 
 | Test | Action| Expected Reaction| Status |
