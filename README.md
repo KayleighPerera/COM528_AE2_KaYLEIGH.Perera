@@ -9,7 +9,7 @@
 
 4) [Requirements](#Requirements)
 
-5) [Features](#Reatures)
+5) [Features](#Features)
 
 6) [Use Cases](#Use-cases)
     - [User point of view](#User-point-of-view)
