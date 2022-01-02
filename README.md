@@ -67,9 +67,10 @@ The system requirements for this program are:
 - Google Chrome or Internet Explorer
 
 # Objectives
-The main objective in this project is to use java tools to be able to let a
-user explore a catalogue while also adding items to a basket which will then 
-allow users to do a transaction in order for them to purchase the item.
+The main objective in this project is to use java tools to be able to make a running shopping cart application which also lets a user explore a catalogue 
+while also adding items to a basket which will then allow users to do a transaction in order for them to purchase items. Another objective this application 
+has is when an admin logs in, it should be able to access "manage users" and "manage catalogue" which will either allow them to make changes to the users 
+logging in or the catalogue page.
 
 
 # Requirements
