@@ -126,8 +126,8 @@ preformed. It also show what tests have passed and what tests have not been pass
 | T2 | User can log in or create an account | application logs in user or creates user or gives error due to wrong details  | PASSED ✅ |
 | T3 | User can look for items they want and add to cart | the apllication gets these items and adds them to cart while also adding the total and quantity | PASSED ✅ |
 | T4 | User can press on the basket page and purchase items | application will redirect to basket page when clicked and the purchase button will take the user to entere credit          card details | PASSED ✅  |
-| T5 | User submits a transaction request, with invalid or outdated card details. | The transaction request is rejected leaving a status message and an error message. | FAILED ❌ |
-| T6 | User submits a transaction request and has funds for this to go through. | The transaction passes, with the user being notified with details of where it went. |  FAILED ❌ |
+| T5 | User submits a transaction request, with invalid or outdated card details. | The transaction request is rejected leaving a status message and an error message. | FAILED ❌ | The tranaction design was not functioning and failing to show a succesful or unsuccussfail action|
+| T6 | User submits a transaction request and has funds for this to go through. | The transaction passes, with the user being notified with details of where it went. |  FAILED ❌ | The tranaction design was not functioning on T5 therefore not allowing T6 to work|
 | T7 | User views order in the "my orders" page | application shows all orders and order status on the "my orders" page | PASSED ✅  |
 | T8 | User can log out | redirects them to home page in annonymous mode | PASSED ✅   |
 
@@ -140,8 +140,8 @@ preformed. It also show what tests have passed and what tests have not been pass
 | T1 | Admin enters in the host url for the application. | If the server is running you will be redirected to a home page, if not you will get an error | PASSED ✅ |
 | T2 | Admin can log in | application logs in admin or gives error due to wrong details | PASSED ✅ |
 | T3 | Admin can modify user| Allows admin to remove or add users | PASSED ✅  |
-| T4 | Admin can modify catalog| Allows admin to remove or add items | PASSED ✅  |
-| T5 | Admin can view all users orders | when "my orders" is pressed on home page it will direct admin to view all orders | FAILED ❌ |
+| T4 | Admin can modify catalog| Allows admin to remove or add items | FAILED ❌ | Wasn't able to show new products added even when trying different ways i would recieve an error| 
+| T5 | Admin can view all users orders | when "my orders" is pressed on home page it will direct admin to view all orders | PASSED ✅  | 
 | T6 | Admin can log out |  redirects them to home page in annonymous mode|  PASSED ✅  |
 
 
