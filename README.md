@@ -131,12 +131,6 @@ preformed. It also show what tests have passed and what tests have not been pass
 | T7 | User views order in the "my orders" page | application shows all orders and order status on the "my orders" page | PASSED ✅  |
 | T8 | User can log out | redirects them to home page in annonymous mode | PASSED ✅   |
 
-| Test | Failures explained |
-| --------- | --------------------------- |
-| T5 | The tranaction design was not functioning and failing to show a successful or unsuccessful action| 
-| T6 | The tranaction design was not functioning on T5 therefore not allowing T6 to work |
-
-
 ## Admin Tests
 
 
@@ -148,11 +142,6 @@ preformed. It also show what tests have passed and what tests have not been pass
 | T4 | Admin can modify catalog| Allows admin to remove or add items | FAILED ❌ | Wasn't able to show new products added even when trying different ways i would recieve an error| 
 | T5 | Admin can view all users orders | when "my orders" is pressed on home page it will direct admin to view all orders | PASSED ✅  | 
 | T6 | Admin can log out |  redirects them to home page in annonymous mode|  PASSED ✅  |
-
-| Test | Failures explained |
-| --------- | --------------------------- |
-| T4 | Wasn't able to show new products added even when trying different ways i would recieve an error |
-
 
 # Project Diagrams
 ## Sequence diagram
