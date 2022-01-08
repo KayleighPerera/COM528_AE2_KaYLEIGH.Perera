@@ -147,21 +147,24 @@ preformed. It also show what tests have passed and what tests have not been pass
 | T6 | Admin can log out |  redirects them to home page in annonymous mode|  PASSED ✅  |
 
 # Javadoc
-To view JavaDocs run:
 
-mvn javadoc:javadoc
-
-or 
-
-Right click on a module to generate the javadoc
-
-Visit https://maven.apache.org/plugins/maven-javadoc-plugin/index.html for more information.
 javadoc modules:
 ShoppingCartApplication-bank-client: Build Failed
 ShoppingCartApplication-dao: Build Success
 ShoppingCartApplication-model: Build Success
 ShoppingCartApplication-service: Build Success
 ShoppingCartApplication-web: Build Success
+
+To view JavaDocs run:
+
+on command prompt:
+    mvn javadoc:javadoc 
+or 
+
+on netbeans:
+Right click on a module to generate the javadoc
+
+Visit https://maven.apache.org/plugins/maven-javadoc-plugin/index.html for more information.
 
 # Project Diagrams
 ## Sequence diagram
