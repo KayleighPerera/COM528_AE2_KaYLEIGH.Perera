@@ -22,6 +22,7 @@
 8) [Javadoc](#javadoc)
 
 9) [Project Digrams](#Project-diagrams)
+    - [Model diagram](#Model-diagram)
     - [Sequence diagram](#Uml-class-diagram)
     - [Robustness diagram](#Robustness-diagram)
     - [Wireframes](#Wireframes)
@@ -170,6 +171,12 @@ Right click on a module to generate the javadoc
 Visit https://maven.apache.org/plugins/maven-javadoc-plugin/index.html for more information.
 
 # Project Diagrams
+## Model diagram
+a model diagram provides an abstract view of the system, we use model diagrams to capture systems use cases. Below we can envision the web application we want to build in
+more detail, this helps us specify, visualise and document applications.
+
+![modeldiagram drawio](https://user-images.githubusercontent.com/71653944/148656662-03ab2e26-cce0-461c-bf24-356665f9dc1b.png)
+
 ## Sequence diagram
 A sequence diagram is a Unified Modeling Language (UML) diagram that illustrates the sequence of messages between objects in an interaction. A sequence diagram shows the sequence of messages passed between objects. Sequence diagrams can also show the control structures between objects. Below we can see three different object being an admin, customer and the shopping cart in between we see how those users and application control the structure of each object for example when the user adds items to the shopping cart the application reacts by adding the items and price to the basket so the user is able to purchase it.
     
