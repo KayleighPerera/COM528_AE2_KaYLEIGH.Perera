@@ -149,11 +149,11 @@ preformed. It also show what tests have passed and what tests have not been pass
 # Javadoc
 
 javadoc modules:
-ShoppingCartApplication-bank-client: Build Failed
-ShoppingCartApplication-dao: Build Success
-ShoppingCartApplication-model: Build Success
-ShoppingCartApplication-service: Build Success
-ShoppingCartApplication-web: Build Success
+- ShoppingCartApplication-bank-client: Build Failed ❌
+- ShoppingCartApplication-dao: Build Success ✅
+- ShoppingCartApplication-model: Build Success ✅
+- ShoppingCartApplication-service: Build Success ✅
+- ShoppingCartApplication-web: Build Success ✅
 
 To view JavaDocs run:
 
