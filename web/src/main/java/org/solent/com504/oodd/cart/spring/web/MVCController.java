@@ -135,6 +135,8 @@ public class MVCController {
             HttpSession session) {
             User sessionUser = getSessionUser(session);
              model.addAttribute("sessionUser", sessionUser);
+             
+       
         
         // used to set tab selected
         model.addAttribute("selectedPage", "viewModifyItem");

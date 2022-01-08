@@ -18,7 +18,7 @@
         <h1>Orders</h1>
         <p>showing ${ordersListSize} orders </p>
             
-            <c:if test="${selectedPage =='adminOrders'}">
+          <c:if test="${sessionUser.userRole =='ADMINISTRATOR'}">
             <!--Search-->
             <div class="row">
                 <form action="./orders" method="GET"> 
@@ -47,6 +47,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th scope="col">User</th>
                     <th scope="col">Date</th>
                     <th scope="col">Total Cost</th>
                     <th scope="col">Number of Items</th>                   
@@ -59,10 +60,13 @@
             <tbody>
                 <c:forEach var="order" items="${ordersList}">
                     <tr>
+                        <td>${user.username}</td>
                         <td>${order.date}</td>                       
                         <td>${order.amountDue}</td>
                         <td>${order.purchasedItems.size()}</td>                                              
                         <td>${order.invoiceStatus}</td>
+                        
+                        
 
                         
                         <td>
@@ -76,7 +80,6 @@
                         </td>
                     </tr>
                 </c:forEach>
-
             </tbody>
         </table>
         

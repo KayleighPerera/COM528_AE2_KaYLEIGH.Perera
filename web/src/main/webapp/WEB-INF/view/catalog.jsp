@@ -38,17 +38,13 @@
                     <tr>
                         <td>${item.name}</td>
                         <td>${item.price}</td>
-                        <td>${item.quantity}</td>                        
-                            <form action="./viewModifyItem" method="GET">
-                                <button class="btn" type="submit" >Modify Item</button>
-                            </form> 
-                        </td>
+                        <td>${item.quantity}</td>  
                     </tr>
                 </c:forEach>
 
             </tbody>
         </table>
-        <form action="./createItem" method="GET">
+	        <form action="./createItem" method="GET">
             <button class="btn" type="submit" >Add Item</button>
         </form> 
     </div>

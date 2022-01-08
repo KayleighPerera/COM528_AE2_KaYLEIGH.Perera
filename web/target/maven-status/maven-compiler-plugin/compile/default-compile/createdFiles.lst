@@ -1,5 +1,8 @@
+com\github\b4\dao\PropertiesDao.class
 org\solent\com504\oodd\cart\spring\web\SpringBootJspApplication.class
+com\github\b4\dao\WebObjectFactory.class
 org\solent\com504\oodd\cart\spring\web\UserAndLoginController.class
 org\solent\com504\oodd\cart\web\WebObjectFactory.class
 org\solent\com504\oodd\cart\spring\web\SpringBootJspConfiguration.class
 org\solent\com504\oodd\cart\spring\web\MVCController.class
+com\github\b4\service\RestController.class

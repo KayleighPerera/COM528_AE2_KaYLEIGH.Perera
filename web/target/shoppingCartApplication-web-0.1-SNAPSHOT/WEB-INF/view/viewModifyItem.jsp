@@ -3,63 +3,30 @@
     Created on : Dec 26, 2021, 20:16
     Author     : Kayleigh Perera
 --%>
+<%@page import="org.solent.com504.oodd.cart.model.dto.ShoppingItem"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@page import="org.solent.com504.oodd.cart.model.dto.User"%>
-<%@page import="org.solent.com504.oodd.cart.model.dto.UserRole"%>
-<c:set var = "selectedPage" value = "users" scope="request"/>
 <jsp:include page="header.jsp" />
 
 <!-- Begin page content -->
+
+
 <main role="main" class="container">
+    <H1>Modify Item</H1>
+    <div style="color:red;">${errorMessage}</div>
+    <div style="color:green;">${message}</div>
 
-    <div>
-        <H1>Modify Item: ${modifyItem.name} </H1>
-        <!-- print error message if there is one -->
-        <div style="color:red;">${errorMessage}</div>
-        <div style="color:green;">${message}</div>
+    <form action="./catalog" method="POST">
+        <p>Item Name <input type="text" name="name" ></input></p>
+        <p>Price<input type="currency" name="price" ></input></p>
+        <p> quantity <input type="number" name="quantity" ></input></p>
+        <p><button type="submit" >Create New Item</button></p>
+    </form> 
 
-        <form action="./viewModifyItem" method="POST" enctype="multipart/form-data">
-            <table class="table">
-                <thead>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Name</td>
-                        <td><input type="text" name="name" value="${modifyItem.name}" /></td>
-                    </tr>
-                    <tr>
-                        <td>Price</td>
-                        <td><input type="text" name="price" value="${modifyItem.price}" /></td>
-                    </tr>
-                    <tr>
-                        <td>Quantity</td>
-                        <td><input type="text" name="quantity" value="${modifyItem.quantity}" /></td>
-                    </tr>
-                   
+</main>
 
-                </tbody>
-
-            </table>
-
-    
-            <c:if test="${sessionUser.userRole =='ADMINISTRATOR' && modifyItem == null}">
-                <button class="btn" type="submit" >Add Item</button>
-            </c:if>
-
-        </form>           
-                            
-                            
-        <c:if test="${sessionUser.userRole =='ADMINISTRATOR'}">
-            <BR>
-            <form action="./catalog">
-                <button class="btn" type="submit" >Return To Catalog</button>
-            </form> 
-        </c:if> 
-            
-
-        </div>
-
-    </main>
+  
 
 <jsp:include page="footer.jsp" />

@@ -1,4 +1,3 @@
-<%@page import="com.github.b4.service.RestController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
    request.setAttribute("selectedPage","checkout");
@@ -10,6 +9,7 @@
 <%@ page import="org.apache.logging.log4j.Logger" %>
 <%@ page import="org.apache.logging.log4j.LogManager" %>
 <%-- import controller modules --%>
+<%@page import="com.github.b4.service.RestController"%>
 <%-- get properties--%>
 <%
    PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
@@ -100,7 +100,7 @@ if ("POST".equals(request.getMethod())) {
                </tbody>
             </table>
          </div>
-         <button class="btn ml-2 rounded" type="submit">Send Details</button>
+         <button type="button" onclick="window.location.href='orders'">Send Details </button>
       </div>
    </form>
    <p><%=reply%></p>
