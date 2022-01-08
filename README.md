@@ -159,8 +159,15 @@ The robustness diagram below shows how the user and admin will interact with the
 ## Wireframes
 i created some wireframes from my jsps to demonstarte how my application will look and what features they include:
 
+### Home Page Jsp
 ![home drawio](https://user-images.githubusercontent.com/71653944/148647074-a9c75a55-4738-4872-a191-5f7c92f2224c.png)
+
+### Shopping basket Page Jsp
 ![shoppingbasket drawio](https://user-images.githubusercontent.com/71653944/148647076-f2860e91-bfb7-4834-9c67-38378f11f7b8.png)
+
+### Checkout Page Jsp
 ![checkout drawio](https://user-images.githubusercontent.com/71653944/148647493-cf9cadd7-8531-4248-9fb8-5a9b736c0548.png)
+
+### Admin Catlog Page Jsp
 ![admincatalog drawio](https://user-images.githubusercontent.com/71653944/148648463-8f6eb50e-dea1-4240-a1a6-b59831a9bb35.png)
 
