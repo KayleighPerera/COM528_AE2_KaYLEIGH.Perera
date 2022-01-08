@@ -19,7 +19,7 @@
     - [User Testing](#user-tests)
     - [Admin Testing](#admin-tests)
 
-8) [Javadoc](#Javdoc)
+8) [Javadoc](#javadoc)
 
 9) [Project Digrams](#Project-diagrams)
     - [Sequence diagram](#Uml-class-diagram)
@@ -147,12 +147,21 @@ preformed. It also show what tests have passed and what tests have not been pass
 | T6 | Admin can log out |  redirects them to home page in annonymous mode|  PASSED ✅  |
 
 # Javadoc
-links to javadoc modules:
-ShoppingCartApplication-bank-client: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\bank-client\target\site\apidocs\index.html
-ShoppingCartApplication-dao: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\dao\target\site\apidocs\org\solent\com504\oodd\cart\dao\impl\package-summary.html
-ShoppingCartApplication-model: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\model\target\site\apidocs\index.html
-ShoppingCartApplication-service: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\service\target\site\apidocs\index.html
-ShoppingCartApplication-web: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\web\target\site\apidocs\index.html
+To view JavaDocs run:
+
+mvn javadoc:javadoc
+
+or 
+
+Right click on a module to generate the javadoc
+
+Visit https://maven.apache.org/plugins/maven-javadoc-plugin/index.html for more information.
+javadoc modules:
+ShoppingCartApplication-bank-client: Build Failed
+ShoppingCartApplication-dao: Build Success
+ShoppingCartApplication-model: Build Success
+ShoppingCartApplication-service: Build Success
+ShoppingCartApplication-web: Build Success
 
 # Project Diagrams
 ## Sequence diagram
