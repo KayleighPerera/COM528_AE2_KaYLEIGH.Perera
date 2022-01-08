@@ -164,6 +164,7 @@ on command prompt:
 or 
 
 on netbeans:
+
 Right click on a module to generate the javadoc
 
 Visit https://maven.apache.org/plugins/maven-javadoc-plugin/index.html for more information.
