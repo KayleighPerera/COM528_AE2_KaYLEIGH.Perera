@@ -173,7 +173,7 @@ Visit https://maven.apache.org/plugins/maven-javadoc-plugin/index.html for more 
 # Project Diagrams
 ## Model diagram
 a model diagram provides an abstract view of the system, we use model diagrams to capture systems use cases. Below we can envision the web application we want to build in
-more detail, this helps us specify, visualise and document applications.
+more detail, this helps us specify, visualise and document applications. The diagram shows the breakdown of relationship between all the classes and functions in the web application system created.
 
 ![modeldiagram drawio](https://user-images.githubusercontent.com/71653944/148656662-03ab2e26-cce0-461c-bf24-356665f9dc1b.png)
 
