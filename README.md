@@ -15,9 +15,11 @@
     - [User point of view](#User-point-of-view)
     - [Admin point of view](#Admin-point-of-view)
 
-8) [Testing](#testing)
+7) [Testing](#testing)
     - [User Testing](#user-tests)
     - [Admin Testing](#admin-tests)
+
+8) [Javadoc](#Javdoc)
 
 9) [Project Digrams](#Project-diagrams)
     - [Sequence diagram](#Uml-class-diagram)
@@ -143,6 +145,14 @@ preformed. It also show what tests have passed and what tests have not been pass
 | T4 | Admin can modify catalog| Allows admin to remove or add items | FAILED ❌ | Wasn't able to show new products added even when trying different ways i would recieve an error| 
 | T5 | Admin can view all users orders | when "my orders" is pressed on home page it will direct admin to view all orders | PASSED ✅  | 
 | T6 | Admin can log out |  redirects them to home page in annonymous mode|  PASSED ✅  |
+
+# Javadoc
+links to javadoc modules:
+ShoppingCartApplication-bank-client: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\bank-client\target\site\apidocs\index.html
+ShoppingCartApplication-dao: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\dao\target\site\apidocs\org\solent\com504\oodd\cart\dao\impl\package-summary.html
+ShoppingCartApplication-model: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\model\target\site\apidocs\index.html
+ShoppingCartApplication-service: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\service\target\site\apidocs\index.html
+ShoppingCartApplication-web: C:\Users\amkaj\OneDrive\Desktop\AE2\COM528_AE2_Kayleigh.Perera\web\target\site\apidocs\index.html
 
 # Project Diagrams
 ## Sequence diagram
