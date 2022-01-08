@@ -22,6 +22,7 @@
 9) [Project Digrams](#Project-diagrams)
     - [Sequence diagram](#Uml-class-diagram)
     - [Robustness diagram](#Robustness-diagram)
+    - [Wireframes](#Wireframes)
 
 
 # Ways to run
@@ -154,3 +155,12 @@ A sequence diagram is a Unified Modeling Language (UML) diagram that illustrates
 The robustness diagram below shows how the user and admin will interact with the website through an interface, which will process the user input and direct the user to a catalogue they can buy from on the other hand you can also process the admin input and it directs the admin to a admin view only where they can add or remove items to the catalogue, remove or add users as well as view all orders made from different users.This application also allows users to make a purhcase If the inputs is valid there purchase was successful and will be stored in a database, if not the card is invalid and the application will direct you back to the credit card form. This diagram is used to show the main interactions between both user and domain and admin and domain and how they are connected.
 
 ![Robustness Diagram drawio](https://user-images.githubusercontent.com/71653944/147790847-db183617-697a-4772-8da4-b0edda906f31.png)
+
+## Wireframes
+i created some wireframes from my jsps to demonstarte how my application will look and what features they include:
+
+![home drawio](https://user-images.githubusercontent.com/71653944/148647074-a9c75a55-4738-4872-a191-5f7c92f2224c.png)
+![shoppingbasket drawio](https://user-images.githubusercontent.com/71653944/148647076-f2860e91-bfb7-4834-9c67-38378f11f7b8.png)
+![checkout drawio](https://user-images.githubusercontent.com/71653944/148647493-cf9cadd7-8531-4248-9fb8-5a9b736c0548.png)
+![admincatalog drawio](https://user-images.githubusercontent.com/71653944/148648463-8f6eb50e-dea1-4240-a1a6-b59831a9bb35.png)
+
