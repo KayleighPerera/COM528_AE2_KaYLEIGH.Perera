@@ -158,7 +158,9 @@ ShoppingCartApplication-web: Build Success
 To view JavaDocs run:
 
 on command prompt:
+
     mvn javadoc:javadoc 
+
 or 
 
 on netbeans:
